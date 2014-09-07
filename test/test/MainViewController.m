@@ -72,11 +72,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    SimpleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     AVStatus *status=statuses[indexPath.row];
     NSString *text;
+    AVUser *user=(AVUser *)[status source];
     text=[status.data objectForKey:@"text"];
-    cell.textLabel.text=text;
+    cell.statusTextLabel.text=text;
+    cell.statusNameLabel.text=user.username;
     // Configure the cell...
     return cell;
 }

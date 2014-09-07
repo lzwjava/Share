@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimpleTableViewCell.h"
 @class StatusService;
 @class AddViewController;
 

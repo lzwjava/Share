@@ -11,6 +11,7 @@
 		70DEAF6D19BB792A000796DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEAF6C19BB792A000796DB /* MainViewController.m */; };
 		70DEAF7019BBFFE1000796DB /* StatusService.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEAF6F19BBFFE1000796DB /* StatusService.m */; };
 		70DEAF7319BC2A05000796DB /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEAF7219BC2A05000796DB /* AddViewController.m */; };
+		70DEAF7619BC58A3000796DB /* SimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEAF7519BC58A3000796DB /* SimpleTableViewCell.m */; };
 		70E86D3619A8A46000B71831 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E86D3519A8A46000B71831 /* AVOSCloud.framework */; };
 		70E86D3819A8A47C00B71831 /* AVOSCloudUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E86D3719A8A47C00B71831 /* AVOSCloudUI.framework */; };
 		70E86D3A19A8A49400B71831 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E86D3919A8A49400B71831 /* SystemConfiguration.framework */; };
@@ -58,6 +59,8 @@
 		70DEAF6F19BBFFE1000796DB /* StatusService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusService.m; sourceTree = "<group>"; };
 		70DEAF7119BC2A05000796DB /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		70DEAF7219BC2A05000796DB /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		70DEAF7419BC58A3000796DB /* SimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewCell.h; sourceTree = "<group>"; };
+		70DEAF7519BC58A3000796DB /* SimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewCell.m; sourceTree = "<group>"; };
 		70E86D3519A8A46000B71831 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = "Pods/AVOSCloud/iOS/release-v2.6.2.1/AVOSCloud.framework"; sourceTree = "<group>"; };
 		70E86D3719A8A47C00B71831 /* AVOSCloudUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudUI.framework; path = "Pods/AVOSCloudUI/iOS/release-v2.1.2/AVOSCloudUI.framework"; sourceTree = "<group>"; };
 		70E86D3919A8A49400B71831 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -183,6 +186,8 @@
 				70DEAF6F19BBFFE1000796DB /* StatusService.m */,
 				70DEAF7119BC2A05000796DB /* AddViewController.h */,
 				70DEAF7219BC2A05000796DB /* AddViewController.m */,
+				70DEAF7419BC58A3000796DB /* SimpleTableViewCell.h */,
+				70DEAF7519BC58A3000796DB /* SimpleTableViewCell.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 				70DEAF6D19BB792A000796DB /* MainViewController.m in Sources */,
 				70EA810819A756BC00B5DD4E /* MasterViewController.m in Sources */,
 				70EA80FB19A756BC00B5DD4E /* main.m in Sources */,
+				70DEAF7619BC58A3000796DB /* SimpleTableViewCell.m in Sources */,
 				70EA810B19A756BC00B5DD4E /* DetailViewController.m in Sources */,
 				707498DF19BB0A9700ED5FAC /* LoginViewController.m in Sources */,
 				70DEAF7319BC2A05000796DB /* AddViewController.m in Sources */,

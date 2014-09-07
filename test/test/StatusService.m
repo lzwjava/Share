@@ -12,6 +12,7 @@
 
 +(NSArray *)findRecentStatuses:(NSInteger)limit{
     AVStatusQuery *query=[AVStatus inboxQuery:kAVStatusTypeTimeline];
+    [query includeKey:@"source"];
     query.limit=50;
     NSArray *objects=[query findObjects];
     return objects;
