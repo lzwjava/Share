@@ -44,10 +44,9 @@
                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
                               ^{
                                   MainViewController *controller=[self mainViewController];
-                                  [controller setStatus];
                                   dispatch_async(dispatch_get_main_queue(), ^(void){
                                       [self.navigationController popViewControllerAnimated:YES];
-                                      [[controller tableView] reloadData];
+                                      [controller setStatus];
                                   });
                               });
 

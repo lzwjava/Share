@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703B686019BED3F000329154 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703B685F19BED3F000329154 /* UsersViewController.m */; };
+		703B686319BEEC6500329154 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703B686219BEEC6500329154 /* UserCenterViewController.m */; };
 		707498DF19BB0A9700ED5FAC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707498DE19BB0A9700ED5FAC /* LoginViewController.m */; };
 		70DEAF6D19BB792A000796DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEAF6C19BB792A000796DB /* MainViewController.m */; };
 		70DEAF7019BBFFE1000796DB /* StatusService.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEAF6F19BBFFE1000796DB /* StatusService.m */; };
@@ -51,6 +53,10 @@
 /* Begin PBXFileReference section */
 		0F7640A4349741119D891A0D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA12EA043FE4A7A82993F1E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		703B685E19BED3F000329154 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		703B685F19BED3F000329154 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
+		703B686119BEEC6500329154 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
+		703B686219BEEC6500329154 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
 		707498DD19BB0A9700ED5FAC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		707498DE19BB0A9700ED5FAC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		70DEAF6B19BB792A000796DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -188,6 +194,10 @@
 				70DEAF7219BC2A05000796DB /* AddViewController.m */,
 				70DEAF7419BC58A3000796DB /* SimpleTableViewCell.h */,
 				70DEAF7519BC58A3000796DB /* SimpleTableViewCell.m */,
+				703B685E19BED3F000329154 /* UsersViewController.h */,
+				703B685F19BED3F000329154 /* UsersViewController.m */,
+				703B686119BEEC6500329154 /* UserCenterViewController.h */,
+				703B686219BEEC6500329154 /* UserCenterViewController.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -355,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70EA80FF19A756BC00B5DD4E /* AppDelegate.m in Sources */,
+				703B686019BED3F000329154 /* UsersViewController.m in Sources */,
+				703B686319BEEC6500329154 /* UserCenterViewController.m in Sources */,
 				70DEAF6D19BB792A000796DB /* MainViewController.m in Sources */,
 				70EA810819A756BC00B5DD4E /* MasterViewController.m in Sources */,
 				70EA80FB19A756BC00B5DD4E /* main.m in Sources */,

@@ -11,4 +11,11 @@
 
 @interface StatusService : NSObject
 +(NSArray *) findRecentStatuses:(NSInteger)limit;
++(NSArray *)findAllUsers:(NSString*)subName;
++(NSArray *)findAllUsersExceptMe:(NSString*)subName;
++(BOOL) isMyFollower:(AVUser *)user;
++(BOOL) isMyFollowee:(AVUser *)user;
++(NSString *)followStatus:(AVUser *)user;
++(void)followOperation:(BOOL)followed user:(AVUser*) user;
++(NSString *)followOperationTitle:(BOOL)followed;
 @end

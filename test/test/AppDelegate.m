@@ -21,6 +21,7 @@
     }
     [AVOSCloud setApplicationId:@"xcalhck83o10dntwh8ft3z5kvv0xc25p6t3jqbe5zlkkdsib"
                       clientKey:@"m9fzwse7od89gvcnk1dmdq4huprjvghjtiug1u2zu073zn99"];
+    setenv("LOG_CURL", "YES", 0);
     return YES;
 }
 							
