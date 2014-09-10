@@ -18,4 +18,5 @@
 +(NSString *)followStatus:(AVUser *)user;
 +(void)followOperation:(BOOL)followed user:(AVUser*) user;
 +(NSString *)followOperationTitle:(BOOL)followed;
++(void)sendStatus:(NSString*)text andCallBack:(AVBooleanResultBlock)callBack;
 @end
