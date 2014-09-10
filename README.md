@@ -4,6 +4,8 @@
 
 [iOS事件流指南](https://cn.avoscloud.com/docs/status_system.html#ios-sdk中的使用方法)
 
+根据这篇指南提供的 API 只用了少量的代码便完成了下列的功能，
+
 =====
 
 ## 当前的功能
