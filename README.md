@@ -2,6 +2,8 @@
 
 一个用 AVOS Cloud 事件流系统 API 做的 iOS App。还正在开发中。
 
+[iOS事件流指南](https://cn.avoscloud.com/docs/status_system.html#ios-sdk中的使用方法)
+
 =====
 
 ## 当前的功能
