@@ -1,4 +1,6 @@
 Share
+
+一个用 AVOS Cloud 事件流系统 API 做的 iOS App。
 =====
 
 ## 当前的功能
