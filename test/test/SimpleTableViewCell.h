@@ -12,6 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *statusTextLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *statusNameLabel;
+@property (weak, nonatomic) IBOutlet  UILabel *statusNameLabel;
 
 @end
