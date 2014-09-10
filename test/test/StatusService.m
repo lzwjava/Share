@@ -13,7 +13,7 @@
 +(NSArray *)findRecentStatuses:(NSInteger)limit{
     AVStatusQuery *query=[AVStatus inboxQuery:kAVStatusTypeTimeline];
     [query includeKey:@"source"];
-    query.limit=50;
+    //query.limit=50;
     NSArray *objects=[query findObjects];
     return objects;
 }
@@ -97,5 +97,14 @@
         [curUser follow:user.objectId andCallback:^(BOOL succeeded, NSError *error) {
         }];
     }
+}
+
++(void)sendStatus:(NSString*)text andCallBack:(AVBooleanResultBlock)callBack{
+    AVStatus *status=[[AVStatus alloc] init];
+    AVUser* curUser=[AVUser currentUser];
+    NSLog(@"curUser=%@",[curUser username]);
+    status.source=curUser;
+    status.data=@{@"text":text};
+    [AVStatus sendStatusToFollowers:status andCallback:callBack];
 }
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVOSCloud/AVOSCloud.h>
+#import "StatusService.h"
 
 @class MainViewController;
 

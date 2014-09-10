@@ -60,8 +60,8 @@
     self.usernameText.delegate=self;
     self.passwordText.delegate=self;
     // Do any additional setup after loading the view.
-    self.usernameText.text=@"lzw";
-    self.passwordText.text=@"lzw";
+    self.usernameText.text=@"kiki";
+    self.passwordText.text=@"kiki";
 }
 
 - (void)didReceiveMemoryWarning

@@ -11,7 +11,9 @@
 @class StatusService;
 @class AddViewController;
 
-@interface MainViewController : UITableViewController
+@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 -(void) setStatus;
 @end

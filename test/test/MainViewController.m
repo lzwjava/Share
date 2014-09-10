@@ -17,14 +17,6 @@
 
 @implementation MainViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -34,14 +26,18 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView setDataSource:self];
+    [self.tableView setDelegate:self];
     UIBarButtonItem *addButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(goAddView:)];
     self.navigationItem.rightBarButtonItem=addButton;
+
     [self setStatus];
 }
 
 - (void) setStatus{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
           statuses=[StatusService findRecentStatuses:50];
+        NSLog(@"len=%d",[statuses count]);
         dispatch_async(dispatch_get_main_queue(), ^{
             [[self tableView] reloadData];
         });
@@ -72,20 +68,24 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    NSLog(@"count=%d",statuses.count);
     return statuses.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SimpleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    SimpleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if(cell==nil){
+        cell=[[SimpleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    }
     AVStatus *status=statuses[indexPath.row];
     NSString *text;
     AVUser *user=(AVUser *)[status source];
     text=[status.data objectForKey:@"text"];
     cell.statusTextLabel.text=text;
+    NSLog(@"text=%@",text);
     cell.statusNameLabel.text=user.username;
-    // Configure the cell...
     return cell;
 }
 

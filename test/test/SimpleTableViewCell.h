@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SimpleTableViewCell : UITableViewCell
-
 @property (weak, nonatomic) IBOutlet UILabel *statusTextLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *statusNameLabel;
 
 @end

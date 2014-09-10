@@ -33,27 +33,13 @@
 
 - (IBAction)addStatus:(id)sender {
     NSString *text=self.statusTextField.text;
-    AVStatus *status=[[AVStatus alloc] init];
-    status.data=@{@"text":text};
-    [AVStatus sendStatusToFollowers:status andCallback:
-       ^(BOOL succeeded, NSError *error) {
-           NSLog(@"===Send %@",[status debugDescription]);
-           NSLog(@"succeed=%@",succeeded? @"YES":@"NO");
-           if(succeeded){
-               NSLog(@"dismiss");
-               dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
-                              ^{
-                                  MainViewController *controller=[self mainViewController];
-                                  dispatch_async(dispatch_get_main_queue(), ^(void){
-                                      [self.navigationController popViewControllerAnimated:YES];
-                                      [controller setStatus];
-                                  });
-                              });
-
-           }else{
-               
-           }
-       }];
+    [StatusService sendStatus:text andCallBack:^(BOOL succeeded, NSError *error) {
+        if(succeeded){
+            [self.navigationController popViewControllerAnimated:YES];
+            MainViewController *controller=[self mainViewController];
+            [controller setStatus];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
