@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="-469" y="64"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Main View Controller - 首页-->
         <scene sceneID="c13-iT-4fY">
             <objects>
                 <tableViewController id="zUj-Zt-EJA" customClass="MainViewController" sceneMemberID="viewController">
@@ -101,21 +101,21 @@
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="DjF-jB-Gwn" customClass="SimpleTableViewCell">
                                 <rect key="frame" x="0.0" y="130" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DjF-jB-Gwn" id="Ujh-ke-MIT">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="DjF-jB-Gwn" id="Ujh-ke-MIT">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4525" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-kR-0qY">
+                                            <rect key="frame" x="14" y="7" width="250" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="name" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heI-z2-yBj">
-                                            <rect key="frame" x="240" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="267" y="11" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-kR-0qY">
-                                            <rect key="frame" x="20" y="11" width="204" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -131,7 +131,7 @@
                             <outlet property="delegate" destination="zUj-Zt-EJA" id="5hd-O8-Lov"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mlE-Xp-Rj5"/>
+                    <navigationItem key="navigationItem" title="首页" id="mlE-Xp-Rj5"/>
                     <connections>
                         <segue destination="6TS-x4-6lr" kind="push" identifier="add_segue" id="fZo-ou-g2f"/>
                     </connections>

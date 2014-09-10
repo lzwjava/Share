@@ -83,8 +83,14 @@
     NSString *text;
     AVUser *user=(AVUser *)[status source];
     text=[status.data objectForKey:@"text"];
-    cell.statusTextLabel.text=text;
+    cell.statusNameLabel.numberOfLines=0;
     cell.statusNameLabel.text=user.username;
+    [cell.statusNameLabel sizeToFit];
+
+    cell.statusTextLabel.numberOfLines=0;
+    cell.statusTextLabel.text=text;
+    [cell.statusTextLabel sizeToFit];
+
     // Configure the cell...
     return cell;
 }
