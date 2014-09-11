@@ -3,6 +3,7 @@
 一个用 AVOS Cloud 事件流系统 API 做的 iOS App，功能类似微博,twitter。还正在开发中。
 
 [iOS事件流指南](https://cn.avoscloud.com/docs/status_system.html#ios-sdk中的使用方法)
+
 [AVOS Cloud 站点下载地址](https://download.avoscloud.com/demo/)
 
 根据这篇指南提供的 API 只用了少量的代码便完成了下列的功能，
