@@ -1,6 +1,6 @@
 # LeanCloud Share
 
-一个用 LeanCloud 事件流系统 API 做的 iOS App，功能类似微博、Twitter。还正在开发中。
+一个用 LeanCloud 事件流系统 API 做的 iOS App，功能类似微博、Twitter。还正在 开发中。
 
 [iOS事件流指南](http://leancloud.cn/docs/status_system.html#ios-sdk中的使用方法)
 
